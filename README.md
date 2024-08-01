@@ -28,6 +28,7 @@
 - https://youtu.be/hwm06ZQ0akI
 
 **Скриншот пройденных тестов**:
+
 ![Тесты пройдены](https://github.com/user-attachments/assets/7e9d2376-9a9c-4ded-8d4b-6ef8b1942bb8)
 
 ## Технологии
