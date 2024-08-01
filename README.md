@@ -42,6 +42,7 @@
 - Webpack для сборки
 - Линтер ESLint с конфигурацией Airbnb
 - Prettier для форматирования
+- UI-кит (Material UI)
 - Yarn
 
 ## Установка и запуск
