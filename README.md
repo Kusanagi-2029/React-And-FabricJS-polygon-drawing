@@ -35,7 +35,7 @@
 
 ## Технологии
 
-- React с хуками
+- React функциональный с хуками (FC & hooks)
 - TypeScript
 - Jest для unit-тестирования
 - FabricJS для работы с canvas-холстом
