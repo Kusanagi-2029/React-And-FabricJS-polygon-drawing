@@ -7,12 +7,12 @@ import { Canvas, FabricText, Line, Rect } from 'fabric';
  * Эта функция очищает холст, сбрасывает состояние точек, временной линии,
  * завершенного отрисовки, квадратов и текста.
  *
- * @param {RefObject<Canvas>} canvasRef - Ссылка на объект холста Fabric.js.
+ * @param {RefObject<Canvas>} canvasRef - Ссылка на объект canvas-холста Fabric.js.
  * @param {Dispatch<SetStateAction<{ x: number; y: number }[]>>} setPoints - Функция для установки состояния точек многоугольника.
  * @param {Dispatch<SetStateAction<Line | null>>} setTempLine - Функция для установки состояния временной линии.
  * @param {Dispatch<SetStateAction<boolean>>} setHasFinishedDrawing - Функция для установки состояния завершения отрисовки.
- * @param {Dispatch<SetStateAction<Rect[]>>} setSquares - Функция для установки состояния квадратов на холсте.
- * @param {Dispatch<SetStateAction<FabricText | null>>} setText - Функция для установки состояния текста на холсте.
+ * @param {Dispatch<SetStateAction<Rect[]>>} setSquares - Функция для установки состояния квадратов на canvas-холсте.
+ * @param {Dispatch<SetStateAction<FabricText | null>>} setText - Функция для установки состояния текста на canvas-холсте.
  */
 const clearCanvas = (
   canvasRef: RefObject<Canvas>,
