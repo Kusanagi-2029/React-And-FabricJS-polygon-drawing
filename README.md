@@ -21,8 +21,10 @@
 > [!CAUTION]
 > СТОИТ ЗАМЕТИТЬ, что площадь пересекающихся внутренних отрезков не учитывается - расчёт идёт по Гауссу с определением центра масс многоугольника.
 
-**Видео/Gif**:
+**Видео/Gif с DEMO**:
 https://github.com/user-attachments/assets/b361d995-08dd-42c7-8ae5-07a0d10d7cb1
+Или на YouTube:
+https://youtu.be/hwm06ZQ0akI
 
 **Скриншот пройденных тестов**:
 ![Тесты пройдены](https://github.com/user-attachments/assets/7e9d2376-9a9c-4ded-8d4b-6ef8b1942bb8)
