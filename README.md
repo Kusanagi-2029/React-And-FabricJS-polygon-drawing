@@ -169,7 +169,7 @@
     <ControlButton label="Очистить" color="secondary" onClick={onClearClick} />
   </Box>
 ```
-3) Самый общий shared UI-компонент кнопки на основе компонента кнопки material UI-kit'a представлен в виде атомарного(неделимого) компонента:
+3) Самый общий shared UI-компонент кнопки на основе компонента кнопки material UI-kit'a представлен в виде атомарного(неделимого) компонента, который, в свою очередь, является** (presenter)** для компонента **ControlPanel**, выступающим в качестве Container относительно данного **ControlButton**, принимающим значения и функцию в виде пропсов:
 ```tsx
 const ControlButton: FC<ControlButtonProps> = ({ label, color, onClick }) => (
   <Button
