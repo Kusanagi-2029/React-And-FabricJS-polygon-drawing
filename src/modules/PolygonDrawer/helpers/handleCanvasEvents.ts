@@ -38,7 +38,7 @@ export const handleCanvasClick =
 
     if (points.length > 0) {
       const snappedPoint = points.find(
-        (p) => Math.abs(newPoint.x - p.x) < 8 && Math.abs(newPoint.y - p.y) < 8,
+        p => Math.abs(newPoint.x - p.x) < 8 && Math.abs(newPoint.y - p.y) < 8,
       );
       if (snappedPoint) {
         newPoint.x = snappedPoint.x;
@@ -49,7 +49,7 @@ export const handleCanvasClick =
         (newPoint.x - points[0].x) ** 2 + (newPoint.y - points[0].y) ** 2,
       );
       if (distanceToFirst < 8) {
-        setPoints((prevPoints) => {
+        setPoints(prevPoints => {
           const newPoints = [...prevPoints, prevPoints[0]];
           drawPolygon(canvas, newPoints, setSquares, setText);
           setIsDrawing(false); // Завершение отрисовки
@@ -74,7 +74,7 @@ export const handleCanvasClick =
       canvas.add(line);
     }
 
-    setPoints((prevPoints) => {
+    setPoints(prevPoints => {
       const newPoints = [...prevPoints, newPoint];
 
       const square = new Rect({
@@ -89,7 +89,7 @@ export const handleCanvasClick =
       });
 
       canvas.add(square);
-      setSquares((prevSquares) => [...prevSquares, square]);
+      setSquares(prevSquares => [...prevSquares, square]);
 
       return newPoints;
     });

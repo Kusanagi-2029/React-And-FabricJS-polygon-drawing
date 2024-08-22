@@ -30,13 +30,13 @@ const clearCanvas = (
     setHasFinishedDrawing(false); // Сброс состояния завершения отрисовки
 
     // Очистка квадратов
-    setSquares((prevSquares) => {
-      prevSquares.forEach((square) => canvas.remove(square));
+    setSquares(prevSquares => {
+      prevSquares.forEach(square => canvas.remove(square));
       return [];
     });
 
     // Очистка текста
-    setText((prevText) => {
+    setText(prevText => {
       if (prevText) {
         canvas.remove(prevText);
         return null;
