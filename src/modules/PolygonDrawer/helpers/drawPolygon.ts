@@ -27,7 +27,7 @@ const drawPolygon = (
 
   // Создаем и добавляем полигон с заливкой
   const polygon = new Polygon(
-    polygonPoints.map((p) => ({ x: p.x, y: p.y })),
+    polygonPoints.map(p => ({ x: p.x, y: p.y })),
     {
       fill: 'rgba(0, 0, 255, 0.3)', // Полупрозрачный синий цвет
       stroke: 'blue',
@@ -38,8 +38,8 @@ const drawPolygon = (
   canvas.add(polygon);
 
   // Удаляем старые квадраты
-  setSquares((prevSquares) => {
-    prevSquares.forEach((square) => canvas.remove(square));
+  setSquares(prevSquares => {
+    prevSquares.forEach(square => canvas.remove(square));
     return [];
   });
 
